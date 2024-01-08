@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+.Navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.6em;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+.home, .about, .services, .portofolio, .contact-us {
+    float: right;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    color: #555;
+    transition: 0.5s;
+}
+li a:not(:hover) {
+    transition: 0.5s;
+}
+.Navigation.scrolled {
+    background-color: white;
+}
+.brand {
+    color: #000;
+    padding-left: 10px;
+}
+.image {
+    filter: brightness(70%);
+    filter: blur(2px);
+}
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    max-width: 800px;
+    font-size: 1em;
+}
+nav a {
+    text-decoration: none;
+}
+.background {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+.button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
+    border-color: white;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    transition: 1.5s;
+}
+.button:not(:hover) {
+    transition: 1s;
+}
+.background {
+    background-color: #F4623A;
+    text-align: center;
+}
+.about-more, .about-text {
+    color: #FFFFFF;
+}
+.about-more {
+    padding-bottom: 0.5em;
+}
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2, h3 {
+    font-size: 2.2em;
+}
+p {
+    font-size: 1.5em;
+}
+.service-container {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+.section-content, .services-list {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.judul, .isi, .isi-bawah {
+    color: black;
+}
+.judul {
+    padding-bottom: 0.5em;
+}
+.isi {
+    padding-bottom: 0.2em;
+}
+.form {
+    text-align: center;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    position: relative;
+}
+.name, .password, .email {
+    font-size: 20px;
+}
+.name, .password, .email, .message {
+    margin: 0.4em;
+
+}
+.message {
+    font-size: 20px;
+}
+.hform {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+.hformb {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+.testimonials {
+    padding: 40px 0;
+    background-color: #e3f2fd;
+    color: #434343;
+    text-align: center;
+    padding-top: 10em;
+}
+.inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border {
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col {
+    flex:  33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial {
+    background: #fff;
+    padding: 30px;
+}
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.contacs {
+    padding-top: 12em;
+}
+input[type=text],input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.containers {
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+}
+.containers h1 {
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+    font-size: 40px;
+}
+.roow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.service {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background: transparent;
+    background-color: #eee;
+}
+.service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+/* .containers h1::after{
+    content: '';
+    background-color: #303ef7;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+} */
+@media screen and (max-width: 980px) {
+    .col {
+        flex: 100%;
+        max-width: 80%;
+    }
+    .layanan {
+        margin-bottom: 20em;
+    }
+    .home, .about, .services, .portofolio, .contact-us {
+        display: none;
+    }
+}
+@media screen and (max-width: 680px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .brand {
+        font-size: 18px;
+    }
+    .hform, .hformb {
+        font-size: 20px;
+    }
+    .testimonials {
+        font-size: 20px;
+    }
+    .testimonials p {
+        font-size: 15px;
+    }
+    .section-about {
+        font-size: 10px;
+    }
+    .text-overlay {
+        width: 100%;
+        font-size: 10px;
+    }
+    .layanan h2 {
+        font-size: 24px;
+    }
+    .layanan p {
+        font-size: 17px;
+    }
+}
